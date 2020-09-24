@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/TeamFreeChart_client/static/js/main.6715c33e.chunk.js",
+    "main.js.map": "/TeamFreeChart_client/static/js/main.6715c33e.chunk.js.map",
+    "runtime-main.js": "/TeamFreeChart_client/static/js/runtime-main.07eb250e.js",
+    "runtime-main.js.map": "/TeamFreeChart_client/static/js/runtime-main.07eb250e.js.map",
+    "static/js/2.6f25acd6.chunk.js": "/TeamFreeChart_client/static/js/2.6f25acd6.chunk.js",
+    "static/js/2.6f25acd6.chunk.js.map": "/TeamFreeChart_client/static/js/2.6f25acd6.chunk.js.map",
+    "index.html": "/TeamFreeChart_client/index.html",
+    "precache-manifest.5065b1c4321faba931911614e43347fe.js": "/TeamFreeChart_client/precache-manifest.5065b1c4321faba931911614e43347fe.js",
+    "service-worker.js": "/TeamFreeChart_client/service-worker.js",
+    "static/js/2.6f25acd6.chunk.js.LICENSE.txt": "/TeamFreeChart_client/static/js/2.6f25acd6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.07eb250e.js",
+    "static/js/2.6f25acd6.chunk.js",
+    "static/js/main.6715c33e.chunk.js"
+  ]
+}
