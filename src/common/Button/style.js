@@ -23,7 +23,8 @@ export const SmallButton_G = styled.button`
   border-radius: 5px;
   border: none;
   box-sizing: border-box;
-  background-color: #e0e0e0;
+  /* background-color: #e0e0e0; */
+  background-color: ${(props) => props.value};
   &:hover {
     background-color: #c4c4c4;
   }
