@@ -4,10 +4,13 @@ import styled from "styled-components";
 // style
 import * as S from "./style";
 import MainWageArea from "components/Home/MainWageArea";
+import ProjectGallery from "components/Home/ProjectGallery";
+
 const Home = () => (
   <Fragment>
     <S.Layout>
       <MainWageArea />
+      <ProjectGallery />
     </S.Layout>
   </Fragment>
 );
