@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -19,7 +20,7 @@ export const Layout = styled.div`
   /* height: 480px; */
   /* box-sizing: border-box; */
 `;
-export const Title = styled.div`
+export const Title = styled.span`
   font-size: 50px;
   font-weight: bold;
   color: #fff;

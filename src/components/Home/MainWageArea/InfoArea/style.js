@@ -45,6 +45,7 @@ export const InfoArea = styled.div`
 export const InfoTitle = styled.div`
   font-size: 18px;
   color: #ffffff;
+  font-weight: 300;
 `;
 
 export const InfoWageArea = styled.div`
@@ -54,7 +55,8 @@ export const InfoWageArea = styled.div`
 `;
 export const InfoWageValue = styled.div`
   color: #fff;
-  font-weight: bold;
+  font-weight: 600;
+  /*폰트 굵기 조정*/
   font-size: 50px;
   &.month {
     font-size: 18px;
@@ -79,5 +81,7 @@ export const InfoMore = styled.div`
   width: 100%;
   height: 40px;
   font-size: 15px;
+  font-weight: 300;
+  /*폰트 굵기 조정*/
   color: #ffffff;
 `;
