@@ -5,8 +5,14 @@ function index() {
     <Fragment>
       <S.Layout>
         <S.SelectWrapper>
-          <S.Select>프로그래밍</S.Select>
-          <S.Select>프론트엔드</S.Select>
+          <S.Select>
+            프로그래밍
+            <S.DownIcon />
+          </S.Select>
+          <S.Select>
+            프론트엔드
+            <S.DownIcon />
+          </S.Select>
         </S.SelectWrapper>
         <S.InfoArea>
           <S.InfoTitle>웹 프론트엔드 개발 평균급여</S.InfoTitle>

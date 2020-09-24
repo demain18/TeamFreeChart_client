@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FiChevronDown } from "react-icons/fi";
 
 export const Layout = styled.div`
   display: flex;
@@ -10,7 +11,10 @@ export const Layout = styled.div`
   /* background-color: #f2f2f2;
   opacity: 0.2; */
 `;
-
+export const DownIcon = styled(FiChevronDown)`
+  width: 20px;
+  height: 20px;
+`;
 export const SelectWrapper = styled.div`
   width: 100%;
   display: flex;
@@ -21,7 +25,7 @@ export const Select = styled.div`
   cursor: pointer;
   display: flex;
   padding: 0px 10px;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   font-size: 15px;
   color: #1d1d1d;
@@ -62,6 +66,8 @@ export const InfoWageValue = styled.div`
     font-size: 18px;
     font-weight: normal;
     margin-bottom: 10px;
+    font-weight: 300;
+    /*폰트 굵기 조정*/
   }
 `;
 
