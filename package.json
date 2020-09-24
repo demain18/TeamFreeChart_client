@@ -7,6 +7,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.20.0",
+    "gh-pages": "^3.1.0",
     "immer": "^7.0.8",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
@@ -26,7 +27,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint src/**/*.jsx src/**/*.js"
+    "lint": "eslint src/**/*.jsx src/**/*.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -50,5 +53,6 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.2"
-  }
+  },
+  "homepage": "https://demain18.github.io/TeamFreeChart_client/"
 }
