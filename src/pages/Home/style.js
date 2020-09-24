@@ -6,7 +6,7 @@ export const Layout = styled.div`
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  min-height: 1500px;
+  min-height: 1800px;
   padding-top: 95px;
   /* border: 1px solid red; */
 `;
