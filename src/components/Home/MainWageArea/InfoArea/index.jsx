@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import * as S from "components/Home/MainWageArea/InfoArea/style";
+
 function index() {
   return (
     <Fragment>
