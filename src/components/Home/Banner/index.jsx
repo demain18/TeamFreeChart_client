@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/accessible-emoji */
+// 이모지 부분 warning 비활성화
 import React from "react";
 import * as S from "./style";
 
