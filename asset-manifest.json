@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/TeamFreeChart_client/static/css/main.e9da5def.chunk.css",
-    "main.js": "/TeamFreeChart_client/static/js/main.f3babac6.chunk.js",
-    "main.js.map": "/TeamFreeChart_client/static/js/main.f3babac6.chunk.js.map",
+    "main.js": "/TeamFreeChart_client/static/js/main.82e63b50.chunk.js",
+    "main.js.map": "/TeamFreeChart_client/static/js/main.82e63b50.chunk.js.map",
     "runtime-main.js": "/TeamFreeChart_client/static/js/runtime-main.07eb250e.js",
     "runtime-main.js.map": "/TeamFreeChart_client/static/js/runtime-main.07eb250e.js.map",
-    "static/js/2.f25a1bdc.chunk.js": "/TeamFreeChart_client/static/js/2.f25a1bdc.chunk.js",
-    "static/js/2.f25a1bdc.chunk.js.map": "/TeamFreeChart_client/static/js/2.f25a1bdc.chunk.js.map",
+    "static/js/2.fe425029.chunk.js": "/TeamFreeChart_client/static/js/2.fe425029.chunk.js",
+    "static/js/2.fe425029.chunk.js.map": "/TeamFreeChart_client/static/js/2.fe425029.chunk.js.map",
     "index.html": "/TeamFreeChart_client/index.html",
-    "precache-manifest.f753b555c9c1edf1397acd85bc571c82.js": "/TeamFreeChart_client/precache-manifest.f753b555c9c1edf1397acd85bc571c82.js",
+    "precache-manifest.0e2ba1545275454a78aaa70c870ee5ed.js": "/TeamFreeChart_client/precache-manifest.0e2ba1545275454a78aaa70c870ee5ed.js",
     "service-worker.js": "/TeamFreeChart_client/service-worker.js",
     "static/css/main.e9da5def.chunk.css.map": "/TeamFreeChart_client/static/css/main.e9da5def.chunk.css.map",
-    "static/js/2.f25a1bdc.chunk.js.LICENSE.txt": "/TeamFreeChart_client/static/js/2.f25a1bdc.chunk.js.LICENSE.txt",
+    "static/js/2.fe425029.chunk.js.LICENSE.txt": "/TeamFreeChart_client/static/js/2.fe425029.chunk.js.LICENSE.txt",
     "static/media/index.css": "/TeamFreeChart_client/static/media/AdobeClean-SemiCnIt.607f7774.eot"
   },
   "entrypoints": [
     "static/js/runtime-main.07eb250e.js",
-    "static/js/2.f25a1bdc.chunk.js",
+    "static/js/2.fe425029.chunk.js",
     "static/css/main.e9da5def.chunk.css",
-    "static/js/main.f3babac6.chunk.js"
+    "static/js/main.82e63b50.chunk.js"
   ]
 }
