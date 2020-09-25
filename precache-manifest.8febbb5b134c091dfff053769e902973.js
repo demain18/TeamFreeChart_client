@@ -1,27 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ba543415bf9d4d263141187b393fa556",
+    "revision": "8662cc63c621842de4fbbbccab63f65b",
     "url": "/TeamFreeChart_client/index.html"
   },
   {
-    "revision": "a2e1ea990318b479ee7a",
+    "revision": "55aaae5d91ae3af60374",
     "url": "/TeamFreeChart_client/static/css/main.e9da5def.chunk.css"
   },
   {
-    "revision": "30750490652145bf7fee",
-    "url": "/TeamFreeChart_client/static/js/2.46d8330d.chunk.js"
+    "revision": "6f9cd9477add95d8dc13",
+    "url": "/TeamFreeChart_client/static/js/2.7723b9fe.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/TeamFreeChart_client/static/js/2.46d8330d.chunk.js.LICENSE.txt"
+    "url": "/TeamFreeChart_client/static/js/2.7723b9fe.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a2e1ea990318b479ee7a",
-    "url": "/TeamFreeChart_client/static/js/main.d9b30084.chunk.js"
+    "revision": "a28736418e8b095e1e60",
+    "url": "/TeamFreeChart_client/static/js/3.65996edc.chunk.js"
   },
   {
-    "revision": "0f6f93d0644867202437",
-    "url": "/TeamFreeChart_client/static/js/runtime-main.07eb250e.js"
+    "revision": "0096bb382f9feda5ea59",
+    "url": "/TeamFreeChart_client/static/js/4.965b32c4.chunk.js"
+  },
+  {
+    "revision": "50807a3c8c0c1073e1c8",
+    "url": "/TeamFreeChart_client/static/js/5.b66e22ce.chunk.js"
+  },
+  {
+    "revision": "55aaae5d91ae3af60374",
+    "url": "/TeamFreeChart_client/static/js/main.1ed26c2d.chunk.js"
+  },
+  {
+    "revision": "fdc24bc38086d498b91c",
+    "url": "/TeamFreeChart_client/static/js/runtime-main.e4bcb2a3.js"
   },
   {
     "revision": "7769000daff1821db3565c6cf403e943",
