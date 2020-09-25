@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.e87fe132.chunk.css",
-    "main.js": "/static/js/main.82e63b50.chunk.js",
-    "main.js.map": "/static/js/main.82e63b50.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.83c3e0c4.js",
-    "runtime-main.js.map": "/static/js/runtime-main.83c3e0c4.js.map",
-    "static/js/2.87e89d5c.chunk.js": "/static/js/2.87e89d5c.chunk.js",
-    "static/js/2.87e89d5c.chunk.js.map": "/static/js/2.87e89d5c.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.5e0c859329aced5af89a6be546e0f5c4.js": "/precache-manifest.5e0c859329aced5af89a6be546e0f5c4.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.e87fe132.chunk.css.map": "/static/css/main.e87fe132.chunk.css.map",
-    "static/js/2.87e89d5c.chunk.js.LICENSE.txt": "/static/js/2.87e89d5c.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/AdobeClean-SemiCnIt.607f7774.eot"
+    "main.css": "/TeamFreeChart_client/static/css/main.e9da5def.chunk.css",
+    "main.js": "/TeamFreeChart_client/static/js/main.82e63b50.chunk.js",
+    "main.js.map": "/TeamFreeChart_client/static/js/main.82e63b50.chunk.js.map",
+    "runtime-main.js": "/TeamFreeChart_client/static/js/runtime-main.07eb250e.js",
+    "runtime-main.js.map": "/TeamFreeChart_client/static/js/runtime-main.07eb250e.js.map",
+    "static/js/2.fe425029.chunk.js": "/TeamFreeChart_client/static/js/2.fe425029.chunk.js",
+    "static/js/2.fe425029.chunk.js.map": "/TeamFreeChart_client/static/js/2.fe425029.chunk.js.map",
+    "index.html": "/TeamFreeChart_client/index.html",
+    "precache-manifest.0e2ba1545275454a78aaa70c870ee5ed.js": "/TeamFreeChart_client/precache-manifest.0e2ba1545275454a78aaa70c870ee5ed.js",
+    "service-worker.js": "/TeamFreeChart_client/service-worker.js",
+    "static/css/main.e9da5def.chunk.css.map": "/TeamFreeChart_client/static/css/main.e9da5def.chunk.css.map",
+    "static/js/2.fe425029.chunk.js.LICENSE.txt": "/TeamFreeChart_client/static/js/2.fe425029.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/TeamFreeChart_client/static/media/AdobeClean-SemiCnIt.607f7774.eot"
   },
   "entrypoints": [
-    "static/js/runtime-main.83c3e0c4.js",
-    "static/js/2.87e89d5c.chunk.js",
-    "static/css/main.e87fe132.chunk.css",
+    "static/js/runtime-main.07eb250e.js",
+    "static/js/2.fe425029.chunk.js",
+    "static/css/main.e9da5def.chunk.css",
     "static/js/main.82e63b50.chunk.js"
   ]
 }
