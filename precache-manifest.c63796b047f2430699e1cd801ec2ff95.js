@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3528c07b7ff0e1875cb7efc3238f3731",
+    "revision": "ae84b1613e10754f9afceb749f9da47f",
     "url": "/TeamFreeChart_client/index.html"
   },
   {
