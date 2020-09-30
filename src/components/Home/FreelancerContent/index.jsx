@@ -22,7 +22,7 @@ function index() {
     <Fragment>
       <S.Layout>
         <S.Header>
-          <S.Title>프리렌서 컨텐츠</S.Title>
+          <S.Title>프리랜서 컨텐츠</S.Title>
           <S.MoreButton>더보기</S.MoreButton>
         </S.Header>
         <S.ProjectsArea>{MapProjectBox}</S.ProjectsArea>

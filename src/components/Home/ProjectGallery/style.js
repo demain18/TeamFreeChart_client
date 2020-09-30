@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Layout = styled.div`
   display: flex;
@@ -16,7 +17,8 @@ export const Title = styled.div`
   font-weight: bold;
 `;
 
-export const MoreButton = styled.div`
+export const MoreButton = styled(Link)`
+  text-decoration: none;
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;

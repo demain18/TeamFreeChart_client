@@ -1,11 +1,11 @@
 import React, { Suspense } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Switch } from "react-router-dom";
 // global style
 import GlobalStyle from "common/GlobalStyle";
 import Header from "components/Header";
 // pages
 
-import Router from "Router";
+import Routes from "Routes";
 
 const App = () => (
   <>
@@ -13,7 +13,9 @@ const App = () => (
       <GlobalStyle />
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Header />
-        <Router />
+        <Switch>
+          <Routes />
+        </Switch>
       </BrowserRouter>
     </Suspense>
   </>

@@ -8,7 +8,7 @@ function index() {
     <>
       <S.Wrapper>
         <S.Layout>
-          <S.Logo>프리차트</S.Logo>
+          <S.Logo to="/">프리차트</S.Logo>
           <S.LinkArea>
             <S.LinkButton>급여차트</S.LinkButton>
             <S.LinkButton>갤러리</S.LinkButton>

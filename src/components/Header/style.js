@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { BsBellFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
+
 export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -10,6 +12,7 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 50px;
   border: solid 1px #d6d6d6;
+  border-top: none;
   border-right: none;
   border-left: none;
   background-color: #ffffff;
@@ -20,8 +23,9 @@ export const Layout = styled.div`
   align-items: center;
   width: 1200px;
 `;
-export const Logo = styled.span`
+export const Logo = styled(Link)`
   cursor: pointer;
+  text-decoration: none;
   width: 70px;
   font-size: 18px;
   font-weight: bold;

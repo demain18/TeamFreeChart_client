@@ -23,7 +23,7 @@ function index() {
       <S.Layout>
         <S.Header>
           <S.Title>프로젝트 갤러리</S.Title>
-          <S.MoreButton>더보기</S.MoreButton>
+          <S.MoreButton to="GalleryExplore">더보기</S.MoreButton>
         </S.Header>
         <S.ProjectsArea>{MapProjectBox}</S.ProjectsArea>
       </S.Layout>
