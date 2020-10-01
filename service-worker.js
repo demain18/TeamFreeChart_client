@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/TeamFreeChart_client/precache-manifest.18d7bbc5d195dfe6cccbf3104cd73dc6.js"
+  "/TeamFreeChart_client/precache-manifest.a4ac3791fc4e8da71bef920abc339a1d.js"
 );
 
 self.addEventListener('message', (event) => {
