@@ -6,8 +6,11 @@ export const Layout = styled.div`
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  min-height: 1800px;
+  min-height: 200px;
   padding-top: 95px;
+  padding-right: 25px;
+  padding-left: 25px;
+  box-sizing: border-box;
   /* border: 1px solid red; */
 `;
 
