@@ -25,7 +25,7 @@ function index() {
         </S.InfoArea>
         <S.InfoMore>
           해당 자료는 현업에 종사하시는 분들의 정보 제공으로 구성{"\n"}되어
-          있으며 매주 금요일 <b style={{ fontWeight: "400" }}>오후 6시</b>마다
+          있으며 매주 금요일 <b style={{ fontWeight: "bold" }}>오후 6시</b>마다
           {/*폰트 굵기 조정*/}
           갱신됩니다.
         </S.InfoMore>
