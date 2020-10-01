@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "72270e4eac96f486ec12d26d126107fe",
+    "revision": "a5fb2409540ad481b7d1f2e493dcd73b",
     "url": "/TeamFreeChart_client/index.html"
   },
   {
-    "revision": "b3380d6cf6530de506a6",
+    "revision": "e2f18c7b738e838924f0",
     "url": "/TeamFreeChart_client/static/css/main.f4b16a74.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TeamFreeChart_client/static/js/3.a81c84c7.chunk.js"
   },
   {
-    "revision": "e7354a7e9bbe476a58f3",
-    "url": "/TeamFreeChart_client/static/js/4.3ffe6964.chunk.js"
+    "revision": "409257855562f2639a35",
+    "url": "/TeamFreeChart_client/static/js/4.31cdfff0.chunk.js"
   },
   {
     "revision": "0f3fba1c3ed4db8181dc",
@@ -32,12 +32,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TeamFreeChart_client/static/js/6.a0e391f2.chunk.js"
   },
   {
-    "revision": "b3380d6cf6530de506a6",
-    "url": "/TeamFreeChart_client/static/js/main.2be9e17d.chunk.js"
+    "revision": "e2f18c7b738e838924f0",
+    "url": "/TeamFreeChart_client/static/js/main.a518c8dd.chunk.js"
   },
   {
-    "revision": "2b6ae98d7dac679410ee",
-    "url": "/TeamFreeChart_client/static/js/runtime-main.28f6aac7.js"
+    "revision": "3d8afa31e4d854996b52",
+    "url": "/TeamFreeChart_client/static/js/runtime-main.0204b60c.js"
   },
   {
     "revision": "1968362aef735c258f1a90901bbd043e",
