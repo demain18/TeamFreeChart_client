@@ -14,7 +14,6 @@ export const ProjectBox = styled.div`
   align-items: flex-start;
   width: 100%;
   height: 246px;
-  margin-bottom: 14px;
 `;
 export const ProjectImage = styled.div`
   width: 100%;
@@ -37,8 +36,10 @@ export const GridContainer = styled.div`
   width: 100%;
   display: grid;
   justify-content: space-between;
-  grid-template-rows: repeat(2, 270px);
-  grid-template-columns: repeat(4, 338px);
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 
   /* grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(4, 1fr); */
