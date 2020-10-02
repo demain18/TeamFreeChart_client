@@ -10,7 +10,7 @@ function index() {
   const MapProjectBox = Dummy.map((i) => {
     return (
       <Fragment>
-        <S.ProjectBox>
+        <S.ProjectBox to="/GalleryDetail">
           <S.ProjectImage />
           <S.ProjectTitle>{i.title}</S.ProjectTitle>
           <S.ProjectValue>{i.value}</S.ProjectValue>

@@ -37,8 +37,9 @@ export const LinkArea = styled.div`
   align-items: center;
   width: 228px;
 `;
-export const LinkButton = styled.div`
+export const LinkButton = styled(Link)`
   cursor: pointer;
+  text-decoration: none;
   font-size: 15px;
   font-weight: bold;
   color: #212121;

@@ -31,7 +31,7 @@ export const Header = styled.div`
   width: 100%;
   margin-bottom: 16px;
 `;
-export const ProjectBox = styled.div`
+export const ProjectBox = styled(Link)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;

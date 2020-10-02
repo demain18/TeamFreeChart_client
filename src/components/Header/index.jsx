@@ -11,7 +11,7 @@ function index() {
           <S.Logo to="/">프리차트</S.Logo>
           <S.LinkArea>
             <S.LinkButton>급여차트</S.LinkButton>
-            <S.LinkButton>갤러리</S.LinkButton>
+            <S.LinkButton to="/GalleryExplore">갤러리</S.LinkButton>
             <S.LinkButton>컨텐츠</S.LinkButton>
             <S.LinkButton>프로필</S.LinkButton>
           </S.LinkArea>
