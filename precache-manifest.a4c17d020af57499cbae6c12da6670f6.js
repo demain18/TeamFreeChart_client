@@ -1,43 +1,51 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d243788e191154846dcb3ce27e87b2c9",
+    "revision": "395abf78ed75efb343707f7830e4e03d",
     "url": "/TeamFreeChart_client/index.html"
   },
   {
-    "revision": "e2f18c7b738e838924f0",
+    "revision": "6de73e7c54d75441a909",
     "url": "/TeamFreeChart_client/static/css/main.f4b16a74.chunk.css"
   },
   {
-    "revision": "6f9cd9477add95d8dc13",
-    "url": "/TeamFreeChart_client/static/js/2.7723b9fe.chunk.js"
+    "revision": "df7ef22e506106245609",
+    "url": "/TeamFreeChart_client/static/js/0.c5ba5133.chunk.js"
+  },
+  {
+    "revision": "6c0b038730df2d53f3ba",
+    "url": "/TeamFreeChart_client/static/js/3.50bcee6c.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/TeamFreeChart_client/static/js/2.7723b9fe.chunk.js.LICENSE.txt"
+    "url": "/TeamFreeChart_client/static/js/3.50bcee6c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "aa2ae43bfc7b1083d01a",
-    "url": "/TeamFreeChart_client/static/js/3.a81c84c7.chunk.js"
+    "revision": "c349538c9a4910107a83",
+    "url": "/TeamFreeChart_client/static/js/4.865b31b4.chunk.js"
   },
   {
-    "revision": "6ed9411f841526c3c549",
-    "url": "/TeamFreeChart_client/static/js/4.3c598902.chunk.js"
+    "revision": "fe7c12700ca68c0e9b1b",
+    "url": "/TeamFreeChart_client/static/js/5.14406a3f.chunk.js"
   },
   {
-    "revision": "0f3fba1c3ed4db8181dc",
-    "url": "/TeamFreeChart_client/static/js/5.5263ab12.chunk.js"
+    "revision": "f508e972e7408f04669c",
+    "url": "/TeamFreeChart_client/static/js/6.5a81558f.chunk.js"
   },
   {
-    "revision": "875499f7c866610820f8",
-    "url": "/TeamFreeChart_client/static/js/6.a0e391f2.chunk.js"
+    "revision": "802500a16f7274f6f820",
+    "url": "/TeamFreeChart_client/static/js/7.e4808adf.chunk.js"
   },
   {
-    "revision": "e2f18c7b738e838924f0",
-    "url": "/TeamFreeChart_client/static/js/main.a518c8dd.chunk.js"
+    "revision": "84d61453caff8776a3ac",
+    "url": "/TeamFreeChart_client/static/js/8.6f57e341.chunk.js"
   },
   {
-    "revision": "36343e52d9b8f743507f",
-    "url": "/TeamFreeChart_client/static/js/runtime-main.f353b04c.js"
+    "revision": "6de73e7c54d75441a909",
+    "url": "/TeamFreeChart_client/static/js/main.ae4ffd26.chunk.js"
+  },
+  {
+    "revision": "1fd54e426e7f1e163afc",
+    "url": "/TeamFreeChart_client/static/js/runtime-main.0db979be.js"
   },
   {
     "revision": "1968362aef735c258f1a90901bbd043e",
