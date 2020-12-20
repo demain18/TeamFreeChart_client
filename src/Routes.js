@@ -11,7 +11,7 @@ function Router() {
       <Route exact path="/" component={Home} />
       <Route exact path="/GalleryExplore" component={GalleryExplore} />
       <Route exact path="/GalleryDetail" component={GalleryDetail} />
-      <Route exact path="/GalleryWritePost" component={GalleryWritePost} />
+      <Route exact path="/GalleryWritePost" component={GalleryWritePost}/>
     </>
   );
 }
