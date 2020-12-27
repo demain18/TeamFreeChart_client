@@ -16,6 +16,7 @@ export const Wrapper = styled.div`
   border-right: none;
   border-left: none;
   background-color: #ffffff;
+  z-index : 9000;
 `;
 export const Layout = styled.div`
   display: flex;
