@@ -10,7 +10,7 @@ const OptionSelector = () => (
         <S.OptionsIcon />
       </S.CategorySelect>
       <S.ButtonRightArea>
-        <S.ProjectUploadButton>프로젝트 등록</S.ProjectUploadButton>
+        <S.ProjectUploadButton to="/GalleryWritePost">프로젝트 등록</S.ProjectUploadButton>
         <S.Select>
           선택
           <S.DownTriIcon />

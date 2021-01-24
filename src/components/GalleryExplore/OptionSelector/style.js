@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { IoMdOptions } from "react-icons/io";
 import { AiFillCaretDown } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 export const Layout = styled.div`
   display: flex;
@@ -60,7 +61,7 @@ export const Select = styled.div`
   box-sizing: border-box;
 `;
 
-export const ProjectUploadButton = styled.div`
+export const ProjectUploadButton =styled(Link)`
   cursor: pointer;
   outline: none;
   display: flex;
