@@ -31,6 +31,12 @@ export const Header = styled.div`
   width: 100%;
   margin-bottom: 16px;
 `;
+export const ProjectsArea = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+`;
 export const ProjectBox = styled(Link)`
   display: flex;
   flex-direction: column;
@@ -54,11 +60,4 @@ export const ProjectTitle = styled.div`
 export const ProjectValue = styled.div`
   font-size: 13px;
   color: #767676;
-`;
-
-export const ProjectsArea = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
 `;

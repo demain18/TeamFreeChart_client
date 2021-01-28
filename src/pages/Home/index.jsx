@@ -11,7 +11,7 @@ import Banner from "components/Home/Banner";
 const Home = () => (
   <Fragment>
     <S.Layout>
-      <MainWageArea />
+      <MainWageArea /> {/* components/Home/MainWageArea */}
       <ProjectGallery />
       <FreelancerContent />
       <Banner />

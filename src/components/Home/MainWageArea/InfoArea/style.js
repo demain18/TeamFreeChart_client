@@ -10,16 +10,26 @@ export const Layout = styled.div`
   height: 360px;
   /* background-color: #f2f2f2;
   opacity: 0.2; */
+
+  @media (max-width: 780px) {
+    height: 300px;
+  }
 `;
 export const DownIcon = styled(FiChevronDown)`
   width: 20px;
   height: 20px;
 `;
 export const SelectWrapper = styled.div`
-  width: 100%;
+  width: 85%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 780px) {
+    // display: none;
+    position: absolute;
+    top: 60px;
+  }
 `;
 export const Select = styled.div`
   cursor: pointer;
@@ -34,6 +44,11 @@ export const Select = styled.div`
   border-radius: 3px;
   border: solid 1px #e0e0e0;
   background-color: #ffffff;
+
+  @media (max-width: 780px) {
+    width: 100%;
+    // margin-left: 10px;
+  }
 `;
 export const InfoArea = styled.div`
   display: flex;
@@ -90,4 +105,11 @@ export const InfoMore = styled.div`
   font-weight: 300;
   /*폰트 굵기 조정*/
   color: #ffffff;
+  line-height: 25px;
+  margin-bottom: 5px;
+
+  @media (max-width: 780px) {
+    position: relative;
+    top: 20px;
+  }
 `;
