@@ -8,7 +8,7 @@ export const Layout = styled.div`
 
   @media (max-width: 780px) {
     width: 100%;
-    left: 30px;
+    // left: 30px;
     margin-bottom: 25px;
   }
 `;
