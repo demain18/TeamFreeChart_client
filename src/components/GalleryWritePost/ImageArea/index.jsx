@@ -10,18 +10,18 @@ const ButtonArea = () => (
       <S.QuestionButton />
     </S.Layout>
     <S.Layout>
-      <div>
+      <S.ImageGrid>
         <S.UploadImageDiv />
         <S.ImageCloseButton />
-      </div>
-      <div>
+      </S.ImageGrid>
+      <S.ImageGrid>
         <S.UploadImageDiv />
         <S.ImageCloseButton />
-      </div>
-      <div>
+      </S.ImageGrid>
+      <S.ImageGrid>
         <S.UploadImageDiv />
         <S.ImageCloseButton />
-      </div>
+      </S.ImageGrid>
     </S.Layout>
   </Fragment>
 );

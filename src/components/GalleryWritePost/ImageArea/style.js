@@ -3,7 +3,10 @@ import { IoMdCloseCircle,IoMdHelpCircle } from "react-icons/io";
 
 export const Layout = styled.div`
   display: flex;
-  margin-top : 15px; 
+  margin-top : 15px;
+  // border: 1px solid blue;
+  @media (max-width: 780px) {
+  }
 `;
 
 
@@ -13,12 +16,22 @@ export const UploadImageDiv = styled.div`
   border : solid 1px #d6d6d6;
   background-color: #d6d6d6;
   margin-right: 15px;
-  position : relative
+  position : relative;
+
+  @media (max-width: 780px) {
+    width: 100%;
+  }
 `;
 
-export const DefaultDiv = styled.div`
+export const ImageGrid = styled.div`
   margin-top : 15px;
   display: flex;
+  position: relative;
+
+  @media (max-width: 780px) {
+    width: 100%;
+  }
+  // border: 1px solid red;
 `;
 
 
@@ -51,7 +64,9 @@ export const QuestionButton = styled(IoMdHelpCircle)`
 export const ImageCloseButton = styled(IoMdCloseCircle)`
   height: 22px;
   width: 22px;
-  position : relative;
-  top : -153px;
-  left : 180px;
+
+  position: absolute;
+  top: -10px;
+  right: 5px;
+  z-index: 2;
 `;

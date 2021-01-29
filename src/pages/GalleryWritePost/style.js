@@ -19,6 +19,10 @@ export const Layout = styled.div`
   min-height: 1500px;
   margin: 0px auto;
   /* box-sizing: border-box; */
+
+  @media (max-width: 780px) {
+    padding: 0px 20px;
+  }
 `;
 
 export const TitleInput = styled.input`
