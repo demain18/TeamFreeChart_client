@@ -8,6 +8,12 @@ export const Layout = styled.div`
   min-height: 1500px;
   margin: 0px auto;
   /* box-sizing: border-box; */
+
+  @media (max-width: 780px) {
+    width: 100%;
+    flex-direction: column;
+    padding: 0px 20px;
+  }
 `;
 export const LeftArea = styled.div``;
 export const RightArea = styled.div`

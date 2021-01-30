@@ -23,7 +23,7 @@ const ProfileDetail = (props) => {
             <S.ProfileImage/>
             {profile.name && profile.info && <S.NameDiv>
               <S.NameP>{profile.name}</S.NameP>
-              <p>{profile.info}</p>
+              <S.NameI>{profile.info}</S.NameI>
             </S.NameDiv>}
           </S.ProfileName>
       </S.Wrapper>

@@ -4,6 +4,8 @@ import FuncButtons from "components/GalleryDetail/FuncButtons";
 import Header from "components/GalleryDetail/Header";
 import Profile from "components/GalleryDetail/Profile";
 import SimilarProject from "components/GalleryDetail/SimilarProject";
+import ProjectHeader from "components/Home/ProjectHeader";
+import ProjectGrid from "components/GalleryExplore/ProjectGrid";
 import React, { Fragment } from "react";
 
 import * as S from "./style";
@@ -17,7 +19,10 @@ const GalleryDetail = () => (
           <Body />
           <FuncButtons />
           <Comment />
-          <SimilarProject />
+          {/* <SimilarProject /> */}
+
+          {/* <ProjectHeader /> */}
+          <ProjectGrid />
         </S.LeftArea>
         <S.RightArea>
           <Profile />

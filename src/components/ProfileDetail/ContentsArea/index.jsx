@@ -21,9 +21,9 @@ const ContentsArea = (props) => {
             <S.IntroductionTitle>연락처/SNS</S.IntroductionTitle>
             <S.IntroductionContentsDiv>
             <ul>
-                <li>openchat.com/</li>
-                <li>sparkejun.co</li>
-                <li>github.com/demain</li>
+                <li to="/">openchat.com</li>
+                <li to="/">sparkejun.co</li>
+                <li to="/">github.com/demain</li>
             </ul>
             </S.IntroductionContentsDiv>
         </div>
@@ -31,9 +31,9 @@ const ContentsArea = (props) => {
             <S.IntroductionTitle>정보</S.IntroductionTitle>
             <S.IntroductionContentsDiv>
             <ul>
-                <li>- 재직중</li>
-                <li>- 직장비공개</li>
-                <li>- 3년차</li>
+                <li>재직중</li>
+                <li>직장비공개</li>
+                <li>3년차</li>
             </ul>
             </S.IntroductionContentsDiv> 
         </div>

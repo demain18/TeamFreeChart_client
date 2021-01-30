@@ -20,11 +20,18 @@ export const HeaderImage = styled.div`
 export const ProfileImage = styled.div`
   height: 190px;
   width: 190px;
-  background: blue;
-  border-radius: 50%;
-  margin-bottom : 15px;
-  left: 45%;
+  // background: blue;
+  // border-radius: 50%;
+  // margin-bottom : 15px;
+  // left: 45%;
+  // position: relative;
+
+  background-color: #fff;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  border-radius: 100%;
   position: relative;
+  margin: 0 auto;
+  margin-bottom: 15px;
 `;
 
 export const ProfileName = styled.div`
@@ -39,9 +46,14 @@ export const NameDiv = styled.div`
 `;
 
 export const NameP = styled.p`
-  font-size: 30pt;
+  font-size: 40px;
   font-weight: bold;
   margin-bottom: 5px;
+`;
+
+export const NameI = styled.p`
+  font-size: 18px;
+  color: #838383;
 `;
 
 export const EditButton = styled.button`

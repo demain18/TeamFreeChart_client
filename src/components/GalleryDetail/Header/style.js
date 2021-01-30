@@ -8,6 +8,10 @@ export const Layout = styled.div`
   width: 100%;
   height: 69px;
   /* border: 1px solid red; */
+
+  @media (max-width: 780px) {
+    margin-bottom: 70px;
+  }
 `;
 
 export const Title = styled.div`

@@ -10,6 +10,10 @@ export const Layout = styled.div`
   min-height: 200px;
   /* border: 1px solid red; */
   box-sizing: border-box;
+
+  @media (max-width: 780px) {
+    width: 100%;
+  }
 `;
 export const DownTriIcon = styled(AiFillCaretDown)`
   width: 15px;
@@ -22,6 +26,7 @@ margin-top:38px;
   width: 100%;
   min-height: 100px;
   font-size: 15px;
+  line-height: 25px;
   color: #222222;
 }
 `;
@@ -31,6 +36,11 @@ export const ProjectImage = styled.div`
   border-radius: 5px;
   border: solid 1px #efefef;
   box-sizing: border-box;
+
+  @media (max-width: 780px) {
+    width: 100%;
+    height: 250px;
+  }
 `;
 export const ButtonArea = styled.div`
   width: 100%;

@@ -4,15 +4,20 @@ export const SalaryArea = styled.div`
   border: 1px solid #d6d6d6;
   border-radius : 5px;
   padding: 15px;
-  text-align :  center;
+  text-align:  center;
   background-color : #256E4F;
   width: 1200px;
-  height: 175px;
+  height: 130px;
   margin-top: 15px;
+  margin-bottom: 40px;
   /* &:active {
     background : #1A4D37;
     height : 85px;
   } */
+
+  @media (max-width: 780px) {
+    width: 100%;
+  }
 `;
 
 export const ExpectedSalaryTitle = styled.span`
@@ -25,10 +30,12 @@ export const ExpectedSalaryDiv = styled.div`
   color: #ebebeb;
   display: flex;
   align-items: flex-end;
-  left: 40.5%;
-  position: relative;
-  margin : 10px 0px 5px 0px;
+  // left: 40.5%;
+  // position: relative;
+  // margin : 10px 0px 5px 0px;
   width: fit-content;
+  position: relative;
+  margin: 0 auto;
 `;
 
 export const ExpectedTime = styled.p`

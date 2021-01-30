@@ -22,6 +22,12 @@ export const Layout = styled.div`
   /* border: 1px solid red; */
 `;
 
+export const ContentGrid = styled.div`
+  @media (max-width: 780px) {
+    padding: 0px 20px;
+  }
+`;
+
 
 export const TitleInput = styled.input`
   margin-top: 10px;
