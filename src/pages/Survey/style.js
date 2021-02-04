@@ -32,8 +32,8 @@ export const SelectDiv = styled.div`
 
 export const SurveyDetail = styled.div`
   border : 1px solid #e0e0e0;
-  margin-top : 25px;
-  border-radius : 8px;
+  margin-top : 15px;
+  border-radius : 10px;
   padding : 25px;
   background : #ffffff;
 `;
@@ -42,21 +42,31 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   position : relative;
-  left : 20%;
-  width: 60%;
+  // width: 60%;
   min-height: 200px;
-  margin-top: 96px;
+  padding-top: 70px;
   box-sizing: border-box;
+
+  margin: 0 auto;
+  max-width: 800px;
+
+  @media (max-width: 780px) {
+    padding: 70px 20px 0px 20px;
+  }
 `;
 
 export const SurveyDetailTitle = styled.p`
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom : 15px;
 `;
 
 export const SelctBoxesDiv = styled.div`
   display : flex;
   color : #767676;
+`;
+
+export const SelectDivTitle = styled.p`
+  font-size: 14px;
 `;
 
 export const PayInput = styled.input.attrs({
