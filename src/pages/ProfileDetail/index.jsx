@@ -5,33 +5,52 @@ import SalaryArea from 'components/ProfileDetail/SalaryArea';
 import ProjectArea  from "components/ProfileDetail/ProjectArea";
 import ProjectGrid from "components/GalleryExplore/ProjectGrid";
 
+
+import { useDispatch } from "react-redux";
+import { loginRequest } from 'modules/SignInModule';
 import * as S from "./style";
 
+import axios from 'axios';
 
 const ProfileDetail = () => {
-
+  const dispatch = useDispatch();
   const [profile, setProfile] = useState({
-    name: '테스트',
-    info: 'Front-end Engineer'
-  })
+    name: 'jihee',
+    info: 'web'
+  });
+  const [error, setError] = useState(null);
 
-  //component did mount
-  useEffect(()=>{
-    console.log('api call');
+  // component did mount
+  useEffect(() => {
+    const fetchUsers = async () =>{
+      try {
+        const response = await axios.get('/1.0/api/check');
+        console.log(response);
+      } catch (e) {
+        setError(e);
+      }
+    };
+
+    fetchUsers();
     // changed name
-    setProfile({...profile, name: 'Tester'});
-  },[]);
+    setProfile({ ...profile, name: 'Ghee' });
+  }, []);
 
-  return(
+  const onSubmit = (form) => {
+    dispatch(loginRequest(form));
+  };
+
+  return (
     <S.Layout>
-        <ProfileHeaderArea profile={profile}/>
-        <S.ContentGrid>
-          <ContentsArea/>
-          <SalaryArea/>
-          {/* <ProjectArea/> */}
-          <ProjectGrid />
-        </S.ContentGrid>
+      <ProfileHeaderArea profile={profile} />
+      <div>
+        <ContentsArea />
+        <SalaryArea />
+        <ProjectArea />
+      </div>
+      <button type="submit" onClick={() => onSubmit({ id: "test", pw: "test1234" })}>테스트</button>
     </S.Layout>
+
   );
 };
 

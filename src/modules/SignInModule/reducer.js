@@ -25,4 +25,4 @@ const login = (state = {}, action) => {
 };
 
 export default login;
-//
+//reducer가 dispatch(action, action creator, payload) 중 action creator 임!

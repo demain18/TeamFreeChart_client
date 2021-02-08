@@ -1,17 +1,15 @@
-import { loginApiProps } from './api';
+// import { loginApiProps } from './api';
 
 export const LOGIN_REQUEST = 'login/LOGIN_REQUEST';
 export const LOGIN_SUCCESS = 'login/LOGIN_SUCCESS';
 export const LOGIN_ERROR = 'login/LOGIN_ERROR';
 
-export const loginRequest = (form) => {
-  return {
-    type: 'LOGIN_REQUEST',
-    payload: form,
-  };
-};
+export const loginRequest = (form) => ({
+  type: 'LOGIN_REQUEST',
+  payload: form,
+});
 
-export const loginSuccess = (loginData: loginApiProps) => {
+export const loginSuccess = (loginData) => { // (loginData: loginApiProps)
   window.localStorage.setItem('token', loginData['JWT token']);
   return {
     type: 'LOGIN_SUCCESS',
