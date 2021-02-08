@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 import Api from '../axiosConfig';
 
 export async function loginApi(

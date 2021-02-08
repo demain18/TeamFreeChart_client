@@ -66,3 +66,47 @@ export const Alarm = styled(BsBellFill)`
   height: 20px;
   color: #212121;
 `;
+
+
+export const Input = styled.input`
+  width: 92%;
+  height: 5px;
+  padding: 15px;
+  margin-top:5px;
+  margin-bottom : 10px;
+  border: solid 1px #d6d6d6;
+`;
+
+export const ModalTitleArea = styled.div`
+  text-align: center;
+  margin-bottom: 25px;
+`;
+
+export const ModalTitleInfo = styled.p`
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+`;
+
+export const ModlaButtonArea = styled.div`
+  text-align : center;
+  & + & {
+    margin-bottom : 10px;
+  }
+`;
+
+export const LoginButton = styled.div`
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  height: 38px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #d6d6d6;
+  background-color: #e0e0e0;
+  color: #141414;
+  margin-bottom : 10px;
+  font-weight: bold;
+`;
