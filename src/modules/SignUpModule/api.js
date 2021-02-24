@@ -1,9 +1,10 @@
 import axios from 'axios';
 
-export async function signUpApi({ form }) {
-  const response = await axios.post('/users', form);
-  // console.log(response);
+// eslint-disable-next-line import/prefer-default-export
+export const signUpApi = async (form) => {
+  const response = await axios.post('/1.0/api/auth/register', form);
+  console.log(response);
   return response.data;
-}
+};
 //
 //

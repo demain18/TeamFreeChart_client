@@ -11,8 +11,8 @@ function Modal({ className, visible, children, title, onClose}) {
         <ModalInner tabIndex="0" className="modal-inner">
           <ModalHeader>
             <ModlaTitle>
-              {title}
-              <CloseButton onClick={onClose}/>
+              <p style={{ width: "95%" }}>{title}</p>
+              <CloseButton onClick={onClose} />
             </ModlaTitle>
 
           </ModalHeader>
@@ -76,19 +76,21 @@ export const ModlaTitle = styled.p`
   font-weight: bold;
   width: 100%;
   text-align: center;
+  display: flex;
+  padding-top: 10px;
 `;
 
 export const CloseButton = styled(IoMdClose)`
   height: 22px;
-  width: 22px;
-  margin: 8px 0px 0px 10px;
-  left: 40%;
+  width: 5%;
+  padding-right: 5px;
+  float: right;
   position: relative;
   cursor:pointer;
 `;
 
 export const ModalContent = styled.div`
-  padding: 40px 20px;
+  padding: 24px 20px;
 `;
 
 export default Modal;

@@ -1,38 +1,37 @@
 const initialState = {
-  loginStatus: {
+  project: {
     loading: false,
     error: null,
     data: {},
-    isLoggedIn: false
+    isSuccess: false
   }
 };
-
-const login = (state = initialState, action) => {
+const project = (state = initialState, action) => {
   switch (action.type) {
-    case 'LOGIN_REQUEST':
+    case 'WRITE_REQUEST':
       return {
         ...state,
-        loginStatus: { loading: true, error: null, data: null, isLoggedIn: false },
+        project: { loading: true, error: null, data: null },
       };
-    case 'LOGIN_SUCCESS':
+    case 'PROJECT_SUCCESS':
       return {
         ...state,
-        loginStatus: {
+        project: {
           loading: false,
           error: null,
           data: action.payload,
-          isLoggedIn: true
+          isSuccess: true
         },
       };
-    case 'LOGIN_ERROR':
+    case 'PROJECT_ERROR':
       return {
         ...state,
-        loginStatus: { loading: false, error: action.payload, data: null },
+        project: { loading: false, error: action.payload, data: null },
       };
     default:
       return state;
   }
 };
 
-export default login;
+export default project;
 //reducer가 dispatch(action, action creator, payload) 중 action creator 임!

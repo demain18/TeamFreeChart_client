@@ -10,14 +10,16 @@ export const loginRequest = (form) => ({
 });
 
 export const loginSuccess = (loginData) => { // (loginData: loginApiProps)
-  window.localStorage.setItem('token', loginData['JWT token']);
+  console.log(loginData);
+  window.sessionStorage.setItem('token', loginData.data.token);
   return {
     type: 'LOGIN_SUCCESS',
-    payload: loginData,
+    payload: loginData.userInfo,
   };
 };
 
 export const loginError = (error) => {
+  console.log(error);
   alert('아이디 혹은 비밀번호를 확인해주세요.');
   return {
     type: 'LOGIN_ERROR',
