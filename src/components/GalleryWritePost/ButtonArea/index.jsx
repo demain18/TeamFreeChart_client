@@ -2,13 +2,13 @@ import React, { Fragment } from "react";
 
 import * as S from "./style";
 
-const ButtonArea = () => (
-  <Fragment>
+const ButtonArea = ({ submit }) => (
+  <>
     <S.Layout>
-      <S.UploadButton>등록</S.UploadButton>
+      <S.UploadButton type="submit" >등록</S.UploadButton>
       <S.CancelButton>취소</S.CancelButton>
     </S.Layout>
-  </Fragment>
+  </>
 );
 
 export default ButtonArea;

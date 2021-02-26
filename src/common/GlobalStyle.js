@@ -42,7 +42,7 @@ const StyleReset = createGlobalStyle`
     a {
         text-decoration: none;
         outline: none;
-        color: #fff;
+        /*color: #fff;*/
     }
 `;
 

@@ -7,7 +7,7 @@ export const Layout = styled.div`
 `;
 
 
-export const Select = styled.div`
+export const Select = styled.select`
   cursor: pointer;
   outline: none;
   display: flex;

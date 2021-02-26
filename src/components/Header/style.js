@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { BsBellFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 export const Wrapper = styled.div`
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -22,6 +22,7 @@ export const Layout = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height : 49px;
   width: 1200px;
 `;
 export const Logo = styled(Link)`
@@ -67,13 +68,12 @@ export const Alarm = styled(BsBellFill)`
   color: #212121;
 `;
 
-
 export const Input = styled.input`
   width: 92%;
   height: 5px;
   padding: 15px;
   margin-top:5px;
-  margin-bottom : 10px;
+  margin-bottom : 13px;
   border: solid 1px #d6d6d6;
 `;
 
@@ -109,4 +109,48 @@ export const LoginButton = styled.div`
   color: #141414;
   margin-bottom : 10px;
   font-weight: bold;
+`;
+
+export const InputCheckbox = styled.input.attrs({
+  type: 'checkbox',
+})`
+  width: 20px;
+  height: 20px;
+`;
+
+export const CheckboxDiv = styled.div`
+  margin-bottom: 13px;
+  display: flex;
+`;
+
+export const Ptag = styled.p`
+  font-size: 13px;
+  color: #6E7980;
+`;
+
+const visiblePrflMenu = css`
+  ${(props) => props.visible
+    && css`
+      display : grid;
+    `}
+`;
+
+export const PrflMenu = styled.div`
+
+  position: relative;
+  background: #fff;
+  width: 150px;
+  left: 1060px;
+  border: 1px #E0E0E0 solid;
+  border-radius: 3px;
+  display: none;
+  ${visiblePrflMenu}
+  a{
+    padding: 5px 30px 5px 10px;
+    cursor : pointer;
+    &:hover {
+      background-color: #F7F7F7;
+    }
+  }
+  
 `;
