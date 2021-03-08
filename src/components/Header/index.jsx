@@ -9,6 +9,7 @@ import { loginRequest } from 'modules/SignInModule';
 import { signUpRequest } from 'modules/SignUpModule';
 import Modal from "common/Modal";
 import LoginModal from "./LoginModal";
+import JoinModal from "./JoinModal";
 import * as S from "./style";
 
 const Index = () => {
@@ -16,6 +17,7 @@ const Index = () => {
    * isVisible state는 하나로 묶어서 관리
    * 나눠져야하는 state있으면 reducer에서 완결
    */
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [loginVisible, setLoginVisible] = useState(false);
   const [joinVisible, setJoinVisible] = useState(false);
   const [prflMenuVisible, setPrflMenuVisible] = useState(false);
@@ -79,31 +81,46 @@ const Index = () => {
     }
   }, [signUpStatus]);
 
-  const login = () => {
-    dispatch(loginRequest(loginInfo));
+  const checkAuthentification = () => {
+    const hasToken = sessionStorage.getItem('token') !== '';
+    setIsAuthenticated(hasToken);
+  };
+
+  const handleClickLoginButton = async () => {
+    await dispatch(loginRequest(loginInfo));
+    checkAuthentification();
   };
 
   const join = () => {
     dispatch(signUpRequest(joinInfo));
   };
 
+  const logout = () => {
+    sessionStorage.removeItem('token');
+    setIsAuthenticated(false);
+    setPrflMenuVisible(false);
+  };
+
   return (
     <>
       <S.Wrapper>
+        {console.log(sessionStorage.getItem('token'))}
         <S.Layout>
           <S.Logo to="/">프리차트</S.Logo>
           <S.LinkArea>
             <S.LinkButton>급여차트</S.LinkButton>
-            <S.LinkButton to="/GalleryExplore">갤러리</S.LinkButton>
+            <S.LinkButton to="/gallery">갤러리</S.LinkButton>
             <S.LinkButton>컨텐츠</S.LinkButton>
-            <S.LinkButton to="/ProfileDetail">프로필</S.LinkButton>
+            <S.LinkButton to="/profile">프로필</S.LinkButton>
           </S.LinkArea>
           <S.ComponentArea>
             <S.Alarm />
-            {loginStatus ? (<S.ProfileImage onClick={prflMenuOpen} />) : (<a className="loginBg" type="button" onClick={loginModal} style={{ cursor: "pointer", color: "#111111" }}>로그인</a>) }
+           { console.log(isAuthenticated) }
+            {isAuthenticated ? (<S.ProfileImage onClick={prflMenuOpen} />) : (<a className="loginBg" type="button" onClick={loginModal} style={{ cursor: "pointer", color: "#111111" }}>로그인</a>) }
 
 
-            <LoginModal visible={loginVisible} loginModal={loginModal} loginInfo={loginInfo} login={login} joinModal={joinModal} onChangeInput={onChangeInput} loginStatus={loginStatus}/>
+            <LoginModal visible={loginVisible} loginModal={loginModal} loginInfo={loginInfo} login={handleClickLoginButton} joinModal={joinModal} onChangeInput={onChangeInput} loginStatus={loginStatus} />
+            <JoinModal visible={joinVisible} joinModal={joinModal} join={join} onChangeJoinInput={onChangeJoinInput} />
             {/* <Modal visible={loginVisible} title="로그인" onClose={loginModal}>
               <S.ModalTitleArea>
                 <S.ModalTitleInfo>프리랜서들을 위한 견적 정보 서비스 </S.ModalTitleInfo>
@@ -122,7 +139,7 @@ const Index = () => {
               </S.ModlaButtonArea>
             </Modal>
  */}
-            <Modal visible={joinVisible} title="회원가입 하기" onClose={joinModal}>
+            {/* <Modal visible={joinVisible} title="회원가입 하기" onClose={joinModal}>
               <div>
                 <S.Ptag>이메일</S.Ptag>
                 <S.Input type="text" placeholder="이메일을 입력하세요" name="email" onChange={onChangeJoinInput} />
@@ -143,7 +160,7 @@ const Index = () => {
                 </label>
               </S.CheckboxDiv>
               <S.LoginButton onClick={join}>회원가입 하기</S.LoginButton>
-            </Modal>
+            </Modal> */}
 
           </S.ComponentArea>
 
@@ -151,6 +168,7 @@ const Index = () => {
         <S.PrflMenu visible={prflMenuVisible}>
           <a className="prfMenu">프로필 보기</a>
           <a className="prfMenu">설정</a>
+          <a className="prfMenu" onClick={logout} >로그아웃</a>
         </S.PrflMenu>
       </S.Wrapper>
     </>

@@ -1,4 +1,6 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { Fragment } from "react";
+import { Tooltip, Button } from 'antd';
 
 import * as S from "./style";
 
@@ -27,10 +29,11 @@ const InfoArea = () => (
           <option value="cc">cc</option>
         </S.Select>
       </S.SelectDiv>
-      <S.CheckboxDiv>
-        <S.InputCheckbox name="r18" />
-        <label>R-18 컨텐츠입니다.</label>
-      </S.CheckboxDiv>
+      <S.InputCheckbox name="r18" id="r18" style={{ marginTop: "35px" }} />
+      <label htmlFor="r18" onBlur={(e) => { console.log(e); }} />
+      <Tooltip placement="rightTop" title="R-18 컨텐츠입니다.">
+        <span style={{ marginTop: "35px", marginLeft: "5px" }}>R-18 컨텐츠입니다.</span>
+      </Tooltip>
     </S.Layout>
 
     <S.Layout>

@@ -28,7 +28,7 @@ export const Layout = styled.div`
 export const Logo = styled(Link)`
   cursor: pointer;
   text-decoration: none;
-  width: 70px;
+  width: 75px;
   font-size: 18px;
   font-weight: bold;
   color: #212121;

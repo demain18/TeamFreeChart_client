@@ -24,7 +24,7 @@ export const UploadImageDiv = styled.div`
 `;
 
 export const ImageGrid = styled.div`
-  margin-top : 15px;
+  margin-top : 5px;
   display: flex;
   position: relative;
 
@@ -44,8 +44,8 @@ export const ImageFileInput = styled.input.attrs({
 export const InfoButton = styled.div`
   cursor: pointer;
   outline: none;
-  width: 124px;
-  height: 38px;
+  width: 109px;
+  height: 29px;
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -53,6 +53,7 @@ export const InfoButton = styled.div`
   border: solid 1px #d6d6d6;
   background-color: #e0e0e0;
   color: #141414;
+  margin-top: 5px;
 `;
 
 export const QuestionButton = styled(IoMdHelpCircle)`
