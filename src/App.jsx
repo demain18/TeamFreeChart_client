@@ -11,7 +11,6 @@ const App = () => {
   const [login, setLogin ] = useState(false);
 
   const setLoginStatus = (val) =>{
-    
     setLogin(val);
     console.log(login);
   }
@@ -20,7 +19,7 @@ const App = () => {
   <>
     <Suspense fallback={<>{/* Loading 컴포넌트 추후 추가 */}</>}>
       <GlobalStyle />
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
         <Header loginStatus={login} setLoginStatus />
         <Switch>
           <Routes />

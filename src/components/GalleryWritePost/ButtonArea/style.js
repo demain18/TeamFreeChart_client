@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Layout = styled.div`
   display: flex;
-  margin-top : 15px; 
+  margin-top : 10px; 
 `;
 
 

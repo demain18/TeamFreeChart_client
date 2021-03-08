@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
-
+import { ButtonG, ButtonB } from "common/Button";
 import * as S from "./style";
 
 const ButtonArea = ({ submit }) => (
   <>
     <S.Layout>
-      <S.UploadButton type="submit" >등록</S.UploadButton>
-      <S.CancelButton>취소</S.CancelButton>
+      <ButtonB>등록</ButtonB>
+      <ButtonG>취소</ButtonG>
     </S.Layout>
   </>
 );

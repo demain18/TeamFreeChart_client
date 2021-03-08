@@ -10,6 +10,8 @@ import App from './App';
 import createBrowserHistory from './modules/history';
 import { CookiesProvider } from 'react-cookie';
 
+import "antd/dist/antd.css";
+
 const customHistory = createBrowserHistory; // 라우터를 위한 history 객체 얻기위해서?
 const sagaMiddleware = createSagaMiddleware({
   context: {

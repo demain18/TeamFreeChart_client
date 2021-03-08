@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { IoMdClose } from "react-icons/io";
-
+ 
 function Modal({ className, visible, children, title, onClose}) {
   return (
     <>
@@ -62,6 +62,9 @@ const ModalInner = styled.div`
   border-radius: 5px;
   width:450px;
   max-width: 480px;
+  @media (max-width: 780px) {
+    width: 350px;
+  }
   top: 50%;
   transform: translateY(-50%);
   margin: 0 auto;

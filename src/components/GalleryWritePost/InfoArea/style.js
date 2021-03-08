@@ -34,9 +34,9 @@ export const DownTriIcon = styled(AiFillCaretDown)`
 
 export const CommentInput = styled.textarea`
   resize: none;
-  margin-top: 10px;
+  margin-top: 20px;
   width: 100%;
-  height: 250px;
+  height: 242px;
   padding: 15px;
   border: solid 1px #d6d6d6;
   box-sizing: border-box;
@@ -46,9 +46,11 @@ export const CommentInput = styled.textarea`
   }
 `;
 
-export const InputPeriod = styled.input`
-  width: 80%;
-  height: 5px;
+export const InputPeriod = styled.input.attrs({
+  type:'number',
+})`
+  width: 139px;
+  height: 38px;
   padding: 15px;
   margin-top:5px;
   border: solid 1px #d6d6d6;
