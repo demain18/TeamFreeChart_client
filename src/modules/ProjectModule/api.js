@@ -14,11 +14,9 @@ export const writeApi = async (form) => {
     title: "test title",
     desc: "this is test description."
   }, {
-    headers: { 'Token' : token } // headers: { Authorization: "Bearer " + token }
+    headers: { Token: token } // headers: { Authorization: "Bearer " + token }
   });
 
   console.log(response);
   return response.data;
 };
-
-

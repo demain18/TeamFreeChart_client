@@ -11,17 +11,17 @@ function Router() {
   return (
     <>
       <Route exact path="/" component={Home} />
-      <Route  path="/GalleryExplore" component={GalleryExplore} />
-      <Route  path="/GalleryDetail" component={GalleryDetail} />
-      <Route  path="/ProfileDetail" component={ProfileDetail} />
-      <Route  path="/Survey" component={Survey} />
-      <Route  path="/GalleryWritePost" component={GalleryWritePost}/>
-      <Route render={({location})=> (  //path 따로 정의하지 않으면 모든 상황에 렌더링
+      <Route  exact path="/gallery" component={GalleryExplore} />
+      <Route  exact path="/gallery/project" component={GalleryDetail} />
+      <Route  exact path="/profile" component={ProfileDetail} />
+      <Route  exact path="/survey" component={Survey} />
+      <Route  exact path="/gallery/project/write" component={GalleryWritePost}/>
+      {/* <Route render={({location})=> (  //path 따로 정의하지 않으면 모든 상황에 렌더링
         <div>
           <h2>이 페이지는 존재하지 않습니다 : </h2>
           <p>{location.pathname}</p>
         </div>
-      )} />
+      )} /> */}
     </>
   );
 }

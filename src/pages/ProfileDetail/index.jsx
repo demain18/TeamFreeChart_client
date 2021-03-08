@@ -48,7 +48,7 @@ const ProfileDetail = () => {
         <SalaryArea />
         <ProjectArea />
       </div>
-      <button type="submit" onClick={() => onSubmit({ id: "test", pw: "test1234" })}>테스트</button>
+      {/* <button type="submit" onClick={() => onSubmit({ id: "test", pw: "test1234" })}>테스트</button> */}
     </S.Layout>
 
   );

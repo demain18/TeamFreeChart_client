@@ -13,13 +13,13 @@ export const FaceBookIcon = styled(AiFillFacebook)`
   height: 18px;
 `;
 
-export const SmallButton_G = styled.button`
+export const SmallButtonG = styled.button`
   cursor: pointer;
   font-size: 13px;
   font-weight: bold;
   color: #000;
-  width: 96px;
-  height: 32px;
+  width: 97px;
+  height: 29px;
   border-radius: 5px;
   border: none;
   box-sizing: border-box;
@@ -30,13 +30,13 @@ export const SmallButton_G = styled.button`
   }
 `;
 
-export const SmallButton_B = styled.button`
+export const SmallButtonB = styled.button`
   cursor: pointer;
   font-size: 13px;
   font-weight: bold;
   color: #fff;
-  width: 96px;
-  height: 32px;
+  width: 97px;
+  height: 29px;
   border-radius: 5px;
   border: none;
   box-sizing: border-box;
@@ -46,13 +46,13 @@ export const SmallButton_B = styled.button`
   }
 `;
 
-export const Button_G = styled.button`
+export const ButtonG = styled.button`
   cursor: pointer;
   font-size: 15px;
   font-weight: bold;
   color: #000;
-  width: 104px;
-  height: 40px;
+  width: 110px;
+  height: 38px;
   border-radius: 5px;
   border: none;
   box-sizing: border-box;
@@ -62,13 +62,13 @@ export const Button_G = styled.button`
   }
 `;
 
-export const Button_B = styled.button`
+export const ButtonB = styled.button`
   cursor: pointer;
   font-size: 15px;
   font-weight: bold;
   color: #fff;
-  width: 104px;
-  height: 40px;
+  width: 110px;
+  height: 38px;
   border-radius: 5px;
   border: none;
   box-sizing: border-box;
@@ -78,10 +78,10 @@ export const Button_B = styled.button`
   }
 `;
 
-export const BigButton_W = styled.button`
+export const BigButtonW = styled.button`
   font-size: 18px;
   width: 160px;
-  height: 40px;
+  height: 43px;
   border-radius: 5px;
   border: solid 1px #d6d6d6;
   background-color: #ffffff;

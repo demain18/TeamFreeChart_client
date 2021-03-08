@@ -15,7 +15,7 @@ const Dummy = [
 const RenderingProjectBox = Dummy.map((v) => {
   return (
     <>
-      <S.ProjectBox to="/GalleryDetail">
+      <S.ProjectBox to="/gallery/project">
         <S.ProjectImage />
         <S.ProjectTitle>{v.Title}</S.ProjectTitle>
         <S.ProjectInfo>{v.Disc}</S.ProjectInfo>

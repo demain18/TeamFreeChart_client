@@ -27,8 +27,8 @@ export const Layout = styled.div`
 
 export const TitleInput = styled.input`
   margin-top: 10px;
-  width: 50%;
-  height: 30px;
+  width: 683px;
+  height: 38px;
   padding: 15px;
   border: solid 1px #d6d6d6;
   box-sizing: border-box;
