@@ -67,6 +67,13 @@ const Index = () => {
   const signUpStatus = useSelector((state) => state.signUp.signUpStatus);
 
   useEffect(() => {
+    const loginSession = sessionStorage.getItem('token');
+    if (loginSession != '') {
+      setIsAuthenticated(loginSession);
+    }
+  }, []);
+
+  useEffect(() => {
     console.log('open 1');
     if (loginStatus) {
       console.log('open 2');
@@ -115,9 +122,8 @@ const Index = () => {
           </S.LinkArea>
           <S.ComponentArea>
             <S.Alarm />
-           { console.log(isAuthenticated) }
+            { console.log(isAuthenticated) }
             {isAuthenticated ? (<S.ProfileImage onClick={prflMenuOpen} />) : (<a className="loginBg" type="button" onClick={loginModal} style={{ cursor: "pointer", color: "#111111" }}>로그인</a>) }
-
 
             <LoginModal visible={loginVisible} loginModal={loginModal} loginInfo={loginInfo} login={handleClickLoginButton} joinModal={joinModal} onChangeInput={onChangeInput} loginStatus={loginStatus} />
             <JoinModal visible={joinVisible} joinModal={joinModal} join={join} onChangeJoinInput={onChangeJoinInput} />
@@ -168,7 +174,7 @@ const Index = () => {
         <S.PrflMenu visible={prflMenuVisible}>
           <a className="prfMenu">프로필 보기</a>
           <a className="prfMenu">설정</a>
-          <a className="prfMenu" onClick={logout} >로그아웃</a>
+          <a className="prfMenu" onClick={logout}>로그아웃</a>
         </S.PrflMenu>
       </S.Wrapper>
     </>

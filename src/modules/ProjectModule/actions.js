@@ -35,6 +35,7 @@ export const deleteProjectRequest = (form) => ({
 
 export const projectSuccess = (result) => { // (loginData: loginApiProps)
   console.log(result);
+  alert('성공하였습니다.');
   return {
     type: 'PROJECT_SUCCESS',
   };

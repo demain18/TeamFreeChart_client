@@ -3,20 +3,23 @@
 import axios from 'axios';
 
 export const writeApi = async (form) => {
-  const token = window.localStorage.getItem('token');
-  console.log(token);
+  const token = window.sessionStorage.getItem('token');
   const response = await axios.post('/1.0/api/project/insert', {
-    category: "test category",
-    categoryDetail: "test cate detail",
-    r18: "test r18",
-    memberCount: 3,
-    period: 30,
-    title: "test title",
-    desc: "this is test description."
+    category: form.category,
+    categoryDetail: form.categoryDetail,
+    r18: form.r18,
+    memberCount: form.memberCount,
+    period: form.period,
+    title: form.title,
+    desc: form.desc
   }, {
-    headers: { Token: token } // headers: { Authorization: "Bearer " + token }
+    headers: { token: token } // headers: { Authorization: "Bearer " + token }
   });
 
-  console.log(response);
   return response.data;
 };
+
+export const listApi = async (form) => {
+  const response = await axios.get(`/1.0/api/gallery/read?page=${form.page}&category=${form.category}&categoryDetail=${form.categoryDetail}`);
+  return response.data;
+}

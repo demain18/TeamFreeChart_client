@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
+import { useCookies } from 'react-cookie';
 import { writeRequest } from 'modules/ProjectModule';
 
 import ButtonArea from "components/GalleryWritePost/ButtonArea";
@@ -30,11 +31,11 @@ const GalleryWritePost = () => {
 
   const dispatch = useDispatch();
 
-  const submit = () => {
+  const submit = (e) => {
+    e.preventDefault();
+    console.log(project);
     dispatch(writeRequest(project));
   };
-
- 
 
   /*   const dispatch = useDispatch();
   const loginStatus = useSelector((state) => state.login.loginStatus);
@@ -57,9 +58,9 @@ const GalleryWritePost = () => {
       <S.Wrapper>
         <S.Layout>
           <form onSubmit={submit}>
-            <S.TitleInput placeholder="제목" name="title" onChangeInput />
+            <S.TitleInput placeholder="제목" name="title" onChange={onChangeInput} />
             <ImageArea onChangeInput />
-            <InfoArea onChangeInput />
+            <InfoArea onChangeInput={onChangeInput} />
             <ButtonArea submit={submit} />
           </form>
 
